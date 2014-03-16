@@ -14,7 +14,9 @@
     </head>
     <body>
         <div class='container-fluid'>
-            @yield('content')
+            <div class='row'>
+                @yield('content')
+            </div>
         </div>
     </body>
 </html>
