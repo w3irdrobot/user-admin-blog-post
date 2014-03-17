@@ -40,17 +40,6 @@ class UserController extends \BaseController {
 	}
 
 	/**
-	 * Display the specified user.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-	/**
 	 * Show the form for editing the specified user.
 	 *
 	 * @param  int  $id
@@ -80,7 +69,9 @@ class UserController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		User::destroy($id);
+
+		return Redirect::to('/user');
 	}
 
 }
