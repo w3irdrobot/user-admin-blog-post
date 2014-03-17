@@ -22,6 +22,11 @@ class HomeController extends BaseController {
 			->withErrors('That username/password combo does not exist.');
 	}
 
+	public function getLogin()
+	{
+		return Redirect::to('/');
+	}
+
 	public function getLogout()
 	{
 		Auth::logout();
