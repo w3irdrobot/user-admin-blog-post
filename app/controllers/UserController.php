@@ -26,7 +26,7 @@ class UserController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('user.create');
 	}
 
 	/**
@@ -36,7 +36,17 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$user = new User;
+
+		$user->first_name = Input::get('first_name');
+		$user->last_name  = Input::get('last_name');
+		$user->username   = Input::get('username');
+		$user->email      = Input::get('email');
+		$user->password   = Input::get('password');
+
+		$user->save();
+
+		return Redirect::to('/user');
 	}
 
 	/**
