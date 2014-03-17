@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'useradmin',
 			'username'  => 'root',
-			'password'  => 'Cincinnati89',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
